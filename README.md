@@ -30,3 +30,5 @@ For your project this week, you will demonstrate proficiency by working with a g
 ## Your Grading Rubric Here:
 
 Use [this rubric](https://docs.google.com/spreadsheets/d/1BbdmSMUdzURMo0wcsr4XSKvegDgB28WkK2wnjmORzDo/edit?usp=sharing) to help guide your development processes
+
+## **Updating for commit & upstream established** 
