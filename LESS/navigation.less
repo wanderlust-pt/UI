@@ -2,8 +2,8 @@
 .nav-container {
     display: flex;
     width: 100%;
-    margin: 1% auto;
-    padding: 2%;
+    margin: auto;
+    padding: 1%;
   
     @media @mobile {
       flex-direction: column;
@@ -11,6 +11,22 @@
       padding: 0px;
       margin: 0px;
       
+    }
+
+    .logo img {
+      display: flex;
+      justify-self: center;
+      margin: auto;
+      width: 100%;
+
+      @media @mobile {
+        display: flex;
+        justify-self: center;
+        margin: auto;
+        padding: 1%;
+        
+      }
+
     }
   
     .main {
@@ -24,18 +40,6 @@
         
       }
   
-      .logo {
-        display: flex;
-        width: 50%;
-  
-        @media @mobile {
-          display: flex;
-          justify-self: center;
-          padding: 5%;
-          
-        }
-  
-      }
   
       nav {
         display: flex;

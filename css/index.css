@@ -1,14 +1,13 @@
 .myButton {
   color: #ffffff;
   background-color: #db4c3f;
-  border-radius: 30%;
-  font-size: 25px;
-  line-height: 25px;
-  padding: 6px;
-  border-radius: 10px;
+  font-size: 3.25rem;
+  line-height: 1.5rem;
+  padding: 3.5%;
+  border-radius: 5%;
   font-family: inherit;
   display: flex;
-  width: 75% clear;
+  width: 50%;
 }
 .myButton:hover {
   background-color: #d62822;
@@ -186,8 +185,8 @@ img {
 .nav-container {
   display: flex;
   width: 100%;
-  margin: 1% auto;
-  padding: 2%;
+  margin: auto;
+  padding: 1%;
 }
 @media (max-width: 500px) {
   .nav-container {
@@ -195,6 +194,20 @@ img {
     justify-content: space-evenly;
     padding: 0px;
     margin: 0px;
+  }
+}
+.nav-container .logo img {
+  display: flex;
+  justify-self: center;
+  margin: auto;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .nav-container .logo img {
+    display: flex;
+    justify-self: center;
+    margin: auto;
+    padding: 1%;
   }
 }
 .nav-container .main {
@@ -206,17 +219,6 @@ img {
     flex-direction: column;
     align-items: center;
     padding: 1%;
-  }
-}
-.nav-container .main .logo {
-  display: flex;
-  width: 50%;
-}
-@media (max-width: 500px) {
-  .nav-container .main .logo {
-    display: flex;
-    justify-self: center;
-    padding: 5%;
   }
 }
 .nav-container .main nav {
@@ -243,14 +245,11 @@ img {
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
   background: #dee0e3;
-}
-.footer p {
   text-align: center;
   color: #333333;
   font-size: 1.6rem;
-  padding: 20px;
+  display: flex;
 }
 .page-container {
   display: flex;
@@ -268,6 +267,7 @@ img {
   .page-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 1%;
   }
 }
@@ -279,7 +279,7 @@ img {
 .page-container .main-header img {
   display: flex;
   width: 100%;
-  margin: 0px 0px 30px 0px;
+  margin: 0%;
 }
 .page-container .main-header .container {
   display: flex;
@@ -293,35 +293,24 @@ img {
     padding: 1%;
   }
 }
-.page-container .section {
-  margin: 30px 0;
+.page-container .features {
+  margin: 5% 1%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .page-container .section {
+  .page-container .features {
     display: flex;
     flex-direction: column;
     padding: 1%;
   }
 }
-.page-container .section img {
-  border-radius: 10px;
-}
-@media (max-width: 500px) {
-  .page-container .section img {
-    display: flex;
-    width: 100%;
-    padding: 1%;
-    border-radius: 10px;
-  }
-}
 .benefits {
   display: flex;
   flex-direction: column;
-  width: 75%;
-  margin: 0 auto 30px;
+  width: 100%;
+  margin: auto;
 }
 @media (max-width: 500px) {
   .benefits {
