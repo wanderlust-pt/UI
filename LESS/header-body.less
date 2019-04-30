@@ -19,18 +19,32 @@
     .main-header {
       display: flex;
       flex-direction: column;
-      border-bottom: lightgray 2px dashed;
   
-      img {
+      .header-img {
         display: flex;
         width: 100%;
-        margin: 0%;
+        margin: 1% auto;
       }
   
-      .container {
-        display: flex;
-        flex-direction: column;      
-      }
+      // .container {
+      //   display: flex;
+      //   flex-direction: column;      
+
+      //   @media @mobile {
+      //     display: flex;
+      //     flex-direction: column;
+      //     justify-content: center;
+      //     padding: 1%;
+      //   }
+
+      //   @media @tablet {
+      //     display: flex;
+      //     flex-direction: column;
+      //     justify-content: center;
+      //     padding: 1%;
+      //   }
+
+      // }
   
       @media @mobile {
         display: flex;
@@ -38,9 +52,64 @@
         justify-content: center;
         padding: 1%;
       }
+
+      @media @tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1%;
+      }
   
     }
+
+    .myButton {
+      color: @btn-accent-color;
+      background-color: @primary-color;
+      display: flex;
+      justify-self: center;
+      width: 50%;
+      margin: 2% auto;
+      justify-content: center;
+      text-transform: uppercase;
+      border-radius: 4px;
+      box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+
+      @media @mobile {
+        display: flex;
+        justify-self: center;
+        margin: auto;
+        padding: 5%;
+        width: auto;
+        height: auto;
+        
+      }
+  }
   
+  .myButton:hover {
+      background-color: @secondary-color;
+  }
+  
+  .myButton p {
+    display: flex;
+    flex-direction: row;
+    font-size: inherit;
+    text-overflow: inherit;
+    line-height: 1.5rem;
+    padding: 3.5%;
+    font-family: inherit;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+
+
+    @media @mobile {
+      display: flex;
+      justify-self: center;
+      margin: auto;
+      padding: 1%;
+      
+    }
+  }
   
     .features {
       margin: 5% 1%;

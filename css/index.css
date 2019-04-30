@@ -1,16 +1,16 @@
 .myButton {
   color: #ffffff;
-  background-color: #db4c3f;
+  background-color: #d62822;
   font-size: 3.25rem;
   line-height: 1.5rem;
   padding: 3.5%;
-  border-radius: 5%;
   font-family: inherit;
   display: flex;
+  justify-self: center;
   width: 50%;
 }
 .myButton:hover {
-  background-color: #d62822;
+  background-color: #db4c3f;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -180,34 +180,60 @@ img {
 .container {
   max-width: 900px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0% auto;
 }
 .nav-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
   margin: auto;
   padding: 1%;
+  justify-content: center;
+  background-color: #d62822;
 }
 @media (max-width: 500px) {
   .nav-container {
+    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0px;
-    margin: 0px;
+    justify-content: center;
+    margin: auto;
+    padding: 1%;
+  }
+}
+.nav-container .logo {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin: 1% auto;
+  padding: 1%;
+  background-color: #d62822;
+}
+@media (max-width: 500px) {
+  .nav-container .logo {
+    display: flex;
+    justify-self: center;
+    margin: 1% auto;
+    padding: 1%;
   }
 }
 .nav-container .logo img {
   display: flex;
   justify-self: center;
-  margin: auto;
+  margin: 1% auto;
+  padding: 1%;
   width: 100%;
+  border-radius: 4px;
+  background-color: #d62822;
+  box-shadow: 3px 3px 10px black;
 }
 @media (max-width: 500px) {
   .nav-container .logo img {
     display: flex;
     justify-self: center;
-    margin: auto;
+    margin: 1% auto;
     padding: 1%;
+    width: 100%;
+    border-radius: 4px;
   }
 }
 .nav-container .main {
@@ -250,6 +276,7 @@ img {
   color: #333333;
   font-size: 1.6rem;
   display: flex;
+  flex-direction: column;
 }
 .page-container {
   display: flex;
@@ -274,22 +301,70 @@ img {
 .page-container .main-header {
   display: flex;
   flex-direction: column;
-  border-bottom: lightgray 2px dashed;
 }
-.page-container .main-header img {
+.page-container .main-header .header-img {
   display: flex;
   width: 100%;
-  margin: 0%;
-}
-.page-container .main-header .container {
-  display: flex;
-  flex-direction: column;
+  margin: 1% auto;
 }
 @media (max-width: 500px) {
   .page-container .main-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1%;
+  }
+}
+@media (max-width: 768px) {
+  .page-container .main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+  }
+}
+.page-container .myButton {
+  color: #ffffff;
+  background-color: #d62822;
+  display: flex;
+  justify-self: center;
+  width: 50%;
+  margin: 2% auto;
+  justify-content: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+}
+@media (max-width: 500px) {
+  .page-container .myButton {
+    display: flex;
+    justify-self: center;
+    margin: auto;
+    padding: 5%;
+    width: auto;
+    height: auto;
+  }
+}
+.page-container .myButton:hover {
+  background-color: #db4c3f;
+}
+.page-container .myButton p {
+  display: flex;
+  flex-direction: row;
+  font-size: inherit;
+  text-overflow: inherit;
+  line-height: 1.5rem;
+  padding: 3.5%;
+  font-family: inherit;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .page-container .myButton p {
+    display: flex;
+    justify-self: center;
+    margin: auto;
     padding: 1%;
   }
 }
