@@ -161,24 +161,24 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
+  font-size: 2.5rem;
+  padding-bottom: 1%;
 }
 h4 {
   font-size: 2.5rem;
-  padding-bottom: 10px;
+  padding-bottom: 1%;
 }
 p {
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
+  padding-bottom: 1%;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 .container {
-  max-width: 900px;
+  max-width: 100%;
   width: 100%;
   margin: 0% auto;
 }
@@ -270,13 +270,170 @@ img {
   }
 }
 .footer {
-  width: 100%;
-  background: #dee0e3;
+  background-color: #dee0e3;
   text-align: center;
   color: #333333;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.footer .call-out {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1% auto;
+}
+.footer .call-out h2 {
+  color: #d62822;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 100%;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .footer .call-out {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .footer .call-out {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer h2 {
+  color: #d62822;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  width: 100%;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .footer .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .footer .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.footer .col-1 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1% auto;
+  padding: 1%;
+}
+.footer .col-1 .col-1 h2 {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .footer .col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 1% auto;
+    padding: 1%;
+  }
+}
+@media (max-width: 768px) {
+  .footer .col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 1% auto;
+    padding: 1%;
+  }
+}
+.footer .col-2 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1% auto;
+  padding: 1%;
+}
+.footer .col-2 .col-2 h2 {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .footer .col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 1% auto;
+    padding: 1%;
+  }
+}
+@media (max-width: 768px) {
+  .footer .col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 1% auto;
+    padding: 1%;
+  }
+}
+.footer .col-3 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1% auto;
+  padding: 1%;
+}
+.footer .col-3 .col-3 h2 {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .footer .col-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 1% auto;
+    padding: 1%;
+  }
+}
+@media (max-width: 768px) {
+  .footer .col-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 1% auto;
+    padding: 1%;
+  }
 }
 .page-container {
   display: flex;
@@ -373,8 +530,13 @@ img {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  margin: 1% auto;
+  background-color: #dee0e3;
+  margin: 1% 1%;
   width: 100%;
+  font-size: 1.6rem;
+}
+.page-container .content h2 {
+  color: #d62822;
 }
 @media (max-width: 500px) {
   .page-container .content {
@@ -399,7 +561,7 @@ img {
 .page-container .features {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
   margin: 1% auto;
 }
 @media (max-width: 500px) {
@@ -425,7 +587,7 @@ img {
 .page-container .benefits {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
   margin: 1% auto;
 }
 @media (max-width: 500px) {
