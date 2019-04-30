@@ -368,74 +368,84 @@ img {
     padding: 1%;
   }
 }
+.page-container .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin: 1% auto;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .page-container .content {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    justify-content: center;
+    margin: 1% auto;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .page-container .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 1% auto;
+    width: 100%;
+  }
+}
 .page-container .features {
-  margin: 5% 1%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 50%;
+  margin: 1% auto;
 }
 @media (max-width: 500px) {
   .page-container .features {
     display: flex;
     flex-direction: column;
-    padding: 1%;
-  }
-}
-.benefits {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: auto;
-}
-@media (max-width: 500px) {
-  .benefits {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     padding: 1%;
+    margin: 1% auto;
   }
 }
-.benefits img {
+.page-container .features img {
   display: flex;
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .benefits img {
+  .page-container .features img {
     display: flex;
     width: 100%;
     padding: 1%;
-    border-radius: 10px;
   }
 }
-.section {
-  padding-top: 30px;
-  border-top: 2px dashed #333333;
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
-}
-@media (max-width: 500px) {
-  .section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 5%;
-  }
-}
-.section .container {
+.page-container .benefits {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  margin-bottom: 30px;
-  font-size: 16px;
+  width: 50%;
+  margin: 1% auto;
 }
 @media (max-width: 500px) {
-  .section .container {
+  .page-container .benefits {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 5%;
-    margin: 0 auto;
+    padding: 1%;
+    margin: 1% auto;
+  }
+}
+.page-container .benefits img {
+  display: flex;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .page-container .benefits img {
+    display: flex;
+    width: 100%;
+    padding: 1%;
   }
 }
 @font-face {

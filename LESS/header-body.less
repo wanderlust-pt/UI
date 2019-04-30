@@ -1,94 +1,72 @@
 .page-container {
+  display: flex;
+  flex-direction: column;
+
+  @media @mobile {
     display: flex;
     flex-direction: column;
-  
+    justify-content: center;
+    padding: 1%;
+  }
+
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+  }
+
+  .main-header {
+    display: flex;
+    flex-direction: column;
+
+    .header-img {
+      display: flex;
+      width: 100%;
+      margin: 1% auto;
+    }
+
     @media @mobile {
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 1%;
     }
-  
+
     @media @tablet {
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 1%;
     }
-  
-    .main-header {
-      display: flex;
-      flex-direction: column;
-  
-      .header-img {
-        display: flex;
-        width: 100%;
-        margin: 1% auto;
-      }
-  
-      // .container {
-      //   display: flex;
-      //   flex-direction: column;      
+  }
 
-      //   @media @mobile {
-      //     display: flex;
-      //     flex-direction: column;
-      //     justify-content: center;
-      //     padding: 1%;
-      //   }
+  .myButton {
+    color: @btn-accent-color;
+    background-color: @primary-color;
+    display: flex;
+    justify-self: center;
+    width: 50%;
+    margin: 2% auto;
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
 
-      //   @media @tablet {
-      //     display: flex;
-      //     flex-direction: column;
-      //     justify-content: center;
-      //     padding: 1%;
-      //   }
-
-      // }
-  
-      @media @mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 1%;
-      }
-
-      @media @tablet {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 1%;
-      }
-  
-    }
-
-    .myButton {
-      color: @btn-accent-color;
-      background-color: @primary-color;
+    @media @mobile {
       display: flex;
       justify-self: center;
-      width: 50%;
-      margin: 2% auto;
-      justify-content: center;
-      text-transform: uppercase;
-      border-radius: 4px;
-      box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+      margin: auto;
+      padding: 5%;
+      width: auto;
+      height: auto;
+    }
+  }
 
-      @media @mobile {
-        display: flex;
-        justify-self: center;
-        margin: auto;
-        padding: 5%;
-        width: auto;
-        height: auto;
-        
-      }
-  }
-  
   .myButton:hover {
-      background-color: @secondary-color;
+    background-color: @secondary-color;
   }
-  
+
   .myButton p {
     display: flex;
     flex-direction: row;
@@ -101,125 +79,90 @@
     width: 100%;
     justify-content: center;
 
-
     @media @mobile {
       display: flex;
       justify-self: center;
       margin: auto;
       padding: 1%;
-      
     }
   }
-  
-    .features {
-      margin: 5% 1%;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 1% auto;
+    width: 100%;
+
+    @media @mobile {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-  
-      @media @mobile {
-        display: flex;
-        flex-direction: column;
-        padding: 1%;
-        
-      }
-  
-    //   .text-content {
-    //     width: 48%;
-    //     padding-right: 1%;
-  
-    //     @media @mobile {
-    //       display: flex;
-    //       flex-direction: column;
-    //       padding: 1%;
-    //       width: 100%;
-          
-    //     }
-  
-    //   }
-  
-    //   .img-content {
-    //     width: 48%;
-    //     padding-left: 1%;
-  
-    //     @media @mobile {
-    //       display: flex;
-    //       width: 100%;
-          
-    //     }
-    // }
-        // img {
-        //   border-radius: 10px;
-  
-        //   @media @mobile {
-        //     display: flex;
-        //     width: 100%;
-        //     padding: 1%;
-            
-          // }
-        }
-      }
-  
+      padding: 1%;
+      justify-content: center;
+      margin: 1% auto;
+      width: 100%;
+    }
 
-  
-    .benefits {
+    @media @tablet {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      margin: 1% auto;
+      width: 100%;
+    }
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 1% auto;
+
+    @media @mobile {
       display: flex;
       flex-direction: column;
       width: 100%;
-      margin: auto;
-  
+      padding: 1%;
+      margin: 1% auto;
+    }
+    img {
+      display: flex;
+      border-radius: 10px;
+
       @media @mobile {
         display: flex;
-        flex-direction: column;
         width: 100%;
         padding: 1%;
-        
-      }
-  
-      img {
-        display: flex;
-        border-radius: 10px;
-  
-        @media @mobile {
-          display: flex;
-          width: 100%;
-          padding: 1%;
-          border-radius: 10px;
-          
-        }
       }
     }
-  
-    .section {
-      padding-top: 30px;
-      border-top: 2px dashed @lighter-font-color;
+  }
+
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 1% auto;
+
+    @media @mobile {
       display: flex;
-      margin: auto;
-      justify-content: space-between;
-  
+      flex-direction: column;
+      width: 100%;
+      padding: 1%;
+      margin: 1% auto;
+    }
+
+    img {
+      display: flex;
+      border-radius: 10px;
+
       @media @mobile {
         display: flex;
-        flex-direction: column;
         width: 100%;
-        padding: 5%;
-        
-      }
-  
-      .container {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        margin-bottom: 30px;
-        font-size: 16px;
-  
-        @media @mobile {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          padding: 5%;
-          margin: 0 auto;
-          
-        }
-        
+        padding: 1%;
       }
     }
+  }
+ 
+}
