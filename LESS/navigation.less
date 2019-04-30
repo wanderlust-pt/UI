@@ -6,7 +6,9 @@
     margin: auto;
     padding: 1%;
     justify-content: center;
-    background-color: #d62822;
+    background-color: @secondary-color;
+    border-bottom: 1%;
+    border-bottom-color: @btn-primary-gray;
   
     @media @mobile {
       display: flex;
@@ -23,7 +25,7 @@
       justify-self: center;
       margin: 1% auto;
       padding: 1%;
-      background-color: #d62822;
+      background-color: @secondary-color;
 
       @media @mobile {
         display: flex;
@@ -39,10 +41,31 @@
       display: flex;
       justify-self: center;
       margin: 1% auto;
-      padding: 1%;
       width: 100%;
       border-radius: 4px;
-      background-color: #d62822;
+      background-color: @secondary-color;
+      box-shadow: 3px 3px 10px black;
+
+      @media @mobile {
+        display: flex;
+        justify-self: center;
+        margin: 1% auto;
+        width: 100%;
+        border-radius: 4px;
+      }
+    }
+
+    .logo h1  {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 1% auto;
+      padding: 1%;
+      width: 100%;
+      color: @btn-accent-color;
+      border-radius: 4px;
+      font-size: 2.5rem;
+      background-color: @secondary-color;
       box-shadow: 3px 3px 10px black;
 
       @media @mobile {
@@ -53,45 +76,65 @@
         width: 100%;
         border-radius: 4px;
       }
+    }
 
-    }
-  
-    .main {
+    .brand {
       display: flex;
+      justify-self: center;
+      margin: 1% auto;
+      padding: 1%;
       width: 100%;
-  
+      border-radius: 4px;
+      font-size: 2.5rem;
+      background-color: @secondary-color;
+      box-shadow: 3px 3px 10px black;
+
       @media @mobile {
-        flex-direction: column;
-        align-items: center;
-        padding: 1%;
-        
-      }
-  
-  
-      nav {
         display: flex;
-        width: 50%;
-        margin: auto;
-        font-family: "Lato";
-        font-weight: 500;
-  
-        a {
-          display: flex;
-          justify-items: flex-end;
-          margin: 0% auto;
-          text-decoration: none;
-          color: @font-color;
-          font-size: 1.5rem;
-        }
-  
-        @media @mobile {
-          display: flex;
-          align-items: baseline;
-          width: 100%;
-          
-        }
+        justify-self: center;
+        margin: 1% auto;
+        padding: 1%;
+        width: 100%;
+        border-radius: 4px;
       }
     }
+  
+    // .main {
+    //   display: flex;
+    //   width: 100%;
+  
+    //   @media @mobile {
+    //     flex-direction: column;
+    //     align-items: center;
+    //     padding: 1%;
+        
+    //   }
+  
+  
+    //   nav {
+    //     display: flex;
+    //     width: 50%;
+    //     margin: auto;
+    //     font-family: "Lato";
+    //     font-weight: 500;
+  
+    //     a {
+    //       display: flex;
+    //       justify-items: flex-end;
+    //       margin: 0% auto;
+    //       text-decoration: none;
+    //       color: @font-color;
+    //       font-size: 1.5rem;
+    //     }
+  
+    //     @media @mobile {
+    //       display: flex;
+    //       align-items: baseline;
+    //       width: 100%;
+          
+    //     }
+    //   }
+    // }
   
   }
   
