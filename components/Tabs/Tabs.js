@@ -6,7 +6,7 @@ class TabLink {
     // Get the custom data attribute on the Link
     // this.data;
     this.data = this.element.dataset.tab;
-    console.log(`${this.data}`);
+    // console.log(`${this.data}`);
     // Using the custom data attribute get the associated Item element
     // this.itemElement;
     this.itemElement = document.querySelector(
