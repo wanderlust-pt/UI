@@ -109,7 +109,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     background-color: wheat;
-    margin: 5% auto;
+    margin: 1% auto;
     width: 95%;
     font-size: 1.6rem;
     border-radius: 4px;
@@ -228,5 +228,36 @@
     h2 {
       color: wheat;
     }
+  }
+}
+.call-out {
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+  justify-content: center;
+  width: 95%;
+  margin: auto;
+  margin-top: 2%;
+  padding: 1%;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px black;
+
+  h2 {
+    color: @primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
   }
 }
