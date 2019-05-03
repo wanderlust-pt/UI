@@ -2,23 +2,28 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: wheat;
+  background-color: @secondary-color;
   font-size: 1.5rem;
   width: 100%;
 
   .call-out {
     display: flex;
     flex-direction: column;
+    background-color: wheat;
+    justify-content: center;
     width: 95%;
     margin: 1% auto;
+    padding: 1%;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px black;
+
 
     h2 {
       color: @primary-color;
       display: flex;
       flex-direction: column;
       justify-self: center;
-      width: 90%;
-      margin: auto;
+      width: 100%;
     }
 
     @media @mobile {
@@ -56,7 +61,12 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    width: 100%;
+    width: 95%;
+    background-color: wheat;
+    border-radius: 4px;
+    padding: 1%;
+    margin: 1% auto;
+    box-shadow: 3px 3px 10px black;
 
     @media @mobile {
       display: flex;
@@ -75,7 +85,11 @@
     flex-direction: column;
     width: 30%;
     margin: 1% auto;
-    padding: 1%;
+    padding: 2%;
+    background-color: wheat;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px black;
+    border: solid 5px @secondary-color;
 
     .col-1 h2 {
       display: flex;
@@ -105,7 +119,11 @@
     flex-direction: column;
     width: 30%;
     margin: 1% auto;
-    padding: 1%;
+    padding: 2%;
+    background-color: wheat;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px black;
+    border: solid 5px @secondary-color;
 
     .col-2 h2 {
       display: flex;
@@ -135,7 +153,11 @@
     flex-direction: column;
     width: 30%;
     margin: 1% auto;
-    padding: 1%;
+    padding: 2%;
+    background-color: wheat;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px black;
+    border: solid 5px @secondary-color;
 
     .col-3 h2 {
       display: flex;
@@ -157,6 +179,38 @@
       width: 100%;
       margin: 1% auto;
       padding: 1%;
+    }
+  }
+
+  #copyright {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1% auto;
+    padding: 2%;
+    color: @secondary-color;
+    text-decoration: none;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      width: 95%;
+      margin: 1% auto;
+      padding: 2%;
+      justify-content: space-evenly;
+      background-color: wheat;
+      border-color: @secondary-color;
+      box-shadow: 3px 3px 10px black;
+      border: solid 5px @secondary-color;
+      border-radius: 4px;
+
+      li,a {
+        text-decoration: none;
+        color: @secondary-color;
+      }
+    }
+    hover:a {
+      color: white;
     }
   }
 }

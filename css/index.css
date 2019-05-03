@@ -178,7 +178,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 100%;
+  max-width: 1000px;
   width: 100%;
   margin: 0% auto;
 }
@@ -284,23 +284,27 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: wheat;
+  background-color: #db4c3f;
   font-size: 1.5rem;
   width: 100%;
 }
 .footer .call-out {
   display: flex;
   flex-direction: column;
+  background-color: wheat;
+  justify-content: center;
   width: 95%;
   margin: 1% auto;
+  padding: 1%;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px black;
 }
 .footer .call-out h2 {
   color: #d62822;
   display: flex;
   flex-direction: column;
   justify-self: center;
-  width: 90%;
-  margin: auto;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .footer .call-out {
@@ -339,7 +343,12 @@ img {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  width: 100%;
+  width: 95%;
+  background-color: wheat;
+  border-radius: 4px;
+  padding: 1%;
+  margin: 1% auto;
+  box-shadow: 3px 3px 10px black;
 }
 @media (max-width: 500px) {
   .footer .row {
@@ -360,7 +369,11 @@ img {
   flex-direction: column;
   width: 30%;
   margin: 1% auto;
-  padding: 1%;
+  padding: 2%;
+  background-color: wheat;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px black;
+  border: solid 5px #db4c3f;
 }
 .footer .col-1 .col-1 h2 {
   display: flex;
@@ -390,7 +403,11 @@ img {
   flex-direction: column;
   width: 30%;
   margin: 1% auto;
-  padding: 1%;
+  padding: 2%;
+  background-color: wheat;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px black;
+  border: solid 5px #db4c3f;
 }
 .footer .col-2 .col-2 h2 {
   display: flex;
@@ -420,7 +437,11 @@ img {
   flex-direction: column;
   width: 30%;
   margin: 1% auto;
-  padding: 1%;
+  padding: 2%;
+  background-color: wheat;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px black;
+  border: solid 5px #db4c3f;
 }
 .footer .col-3 .col-3 h2 {
   display: flex;
@@ -444,6 +465,36 @@ img {
     margin: 1% auto;
     padding: 1%;
   }
+}
+.footer #copyright {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1% auto;
+  padding: 2%;
+  color: #db4c3f;
+  text-decoration: none;
+}
+.footer #copyright ul {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: 1% auto;
+  padding: 2%;
+  justify-content: space-evenly;
+  background-color: wheat;
+  border-color: #db4c3f;
+  box-shadow: 3px 3px 10px black;
+  border: solid 5px #db4c3f;
+  border-radius: 4px;
+}
+.footer #copyright ul li,
+.footer #copyright ul a {
+  text-decoration: none;
+  color: #db4c3f;
+}
+.footer #copyright hover:a {
+  color: white;
 }
 .page-container {
   display: flex;
@@ -495,7 +546,7 @@ img {
   }
 }
 .page-container .myButton {
-  color: #ffffff;
+  color: wheat;
   background-color: #d62822;
   display: flex;
   justify-self: center;
@@ -505,7 +556,7 @@ img {
   text-transform: uppercase;
   border: solid 5px wheat;
   border-radius: 4px;
-  box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+  box-shadow: 3px 3px 10px black;
 }
 @media (max-width: 500px) {
   .page-container .myButton {
@@ -527,9 +578,9 @@ img {
   font-size: inherit;
   text-overflow: inherit;
   line-height: 1.5rem;
-  padding: 3.5%;
+  padding: 2%;
   font-family: inherit;
-  margin: auto;
+  margin: 1% auto;
   width: 100%;
   justify-content: center;
 }
@@ -551,6 +602,7 @@ img {
   width: 95%;
   font-size: 1.6rem;
   border-radius: 4px;
+  box-shadow: 3px 3px 10px black;
 }
 .page-container .content h2 {
   color: #db4c3f;
@@ -584,6 +636,7 @@ img {
   border: solid 5px #db4c3f;
   border-radius: 4px;
   padding: 2%;
+  box-shadow: 3px 3px 10px black;
 }
 .page-container .features h2 {
   color: #db4c3f;
@@ -627,6 +680,7 @@ img {
   border: solid 5px #db4c3f;
   border-radius: 4px;
   padding: 2%;
+  box-shadow: 3px 3px 10px black;
 }
 .page-container .benefits h2 {
   color: #db4c3f;
