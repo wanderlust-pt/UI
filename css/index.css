@@ -552,7 +552,8 @@ img {
   background-color: wheat;
   border-radius: 4px;
   box-shadow: 3px 3px 10px black;
-  margin: 4%;
+  margin: 3%;
+  padding: 1%;
 }
 .page-container .myButton {
   color: wheat;
