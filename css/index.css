@@ -186,7 +186,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: auto;
+  margin: 5% auto;
   justify-content: center;
   padding: 1%;
 }
@@ -221,7 +221,7 @@ img {
 .nav-container .logo img {
   display: flex;
   justify-self: center;
-  margin: 1% auto;
+  margin: 5% auto;
   width: 100%;
   border-radius: 4px;
   border: solid 5px #db4c3f;
@@ -231,7 +231,7 @@ img {
   .nav-container .logo img {
     display: flex;
     justify-self: center;
-    margin: 1% auto;
+    margin: 2% auto;
     width: 100%;
     border-radius: 4px;
   }
@@ -502,7 +502,7 @@ img {
   flex-direction: column;
   width: 100%;
   max-width: 1000px;
-  margin: 2% auto;
+  margin: 0% auto;
   padding: 1%;
   background-color: #db4c3f;
 }
@@ -547,13 +547,20 @@ img {
     padding: 1%;
   }
 }
+.page-container .button {
+  display: flex;
+  background-color: wheat;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px black;
+  margin: 4%;
+}
 .page-container .myButton {
   color: wheat;
   background-color: #d62822;
   display: flex;
   justify-self: center;
   width: 45%;
-  margin: 1% auto;
+  margin: 5% auto;
   justify-content: center;
   text-transform: uppercase;
   border: solid 5px wheat;
@@ -564,7 +571,7 @@ img {
   .page-container .myButton {
     display: flex;
     justify-self: center;
-    margin: auto;
+    margin: 2% auto;
     padding: 5%;
     width: auto;
     height: auto;
@@ -600,7 +607,7 @@ img {
   flex-wrap: nowrap;
   justify-content: space-between;
   background-color: wheat;
-  margin: 1% auto;
+  margin: 5% auto;
   width: 95%;
   font-size: 1.6rem;
   border-radius: 4px;

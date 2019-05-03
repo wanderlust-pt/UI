@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 1000px;
-  margin: 2% auto;
+  margin: 0% auto;
   padding: 1%;
   background-color: @secondary-color;
 
@@ -46,13 +46,22 @@
     }
   }
 
+  .button {
+    display: flex;
+    background-color: wheat;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px black;
+    margin: 4%;
+
+  }
+
   .myButton {
     color: wheat;
     background-color: @primary-color;
     display: flex;
     justify-self: center;
     width: 45%;
-    margin: 1% auto;
+    margin: 5% auto;
     justify-content: center;
     text-transform: uppercase;
     border: solid 5px wheat;
@@ -62,7 +71,7 @@
     @media @mobile {
       display: flex;
       justify-self: center;
-      margin: auto;
+      margin: 2% auto;
       padding: 5%;
       width: auto;
       height: auto;
@@ -100,7 +109,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     background-color: wheat;
-    margin: 1% auto;
+    margin: 5% auto;
     width: 95%;
     font-size: 1.6rem;
     border-radius: 4px;
