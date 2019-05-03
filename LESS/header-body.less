@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0% auto;
+  background-color: @secondary-color;
 
   @media @mobile {
     display: flex;
@@ -49,10 +50,11 @@
     background-color: @primary-color;
     display: flex;
     justify-self: center;
-    width: 50%;
-    margin: 2% auto;
+    width: 45%;
+    margin: 1% auto;
     justify-content: center;
     text-transform: uppercase;
+    border: solid 5px wheat;
     border-radius: 4px;
     box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
 
@@ -67,7 +69,8 @@
   }
 
   .myButton:hover {
-    background-color: @secondary-color;
+    background-color: wheat;
+    color: @secondary-color;
   }
 
   .myButton p {
@@ -90,24 +93,25 @@
     }
   }
 
-  .tabs-container {
-    
+  .content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
-    background-color: @btn-secondary-gray;
-    margin: 4% auto;
-    width: 80%;
+    justify-content: space-between;
+    background-color: wheat;
+    margin: 1% auto;
+    width: 95%;
     font-size: 1.6rem;
+    border-radius: 4px;
 
     h2 {
-      color: @primary-color;
+      color: @secondary-color;
     }
 
     @media @mobile {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       padding: 1%;
       justify-content: center;
       margin: 1% auto;
@@ -117,85 +121,73 @@
     @media @tablet {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       justify-content: space-evenly;
       margin: 1% auto;
       width: 100%;
     }
   }
 
-  .tabs-container .box {
-    padding: 40px;
+  .features {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 1% auto;
+    border: solid 5px @secondary-color;
+    border-radius: 4px;
+    padding: 2%;
+
+    h2 {
+      color: @secondary-color;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      margin: auto;
+    }
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 1%;
+      margin: 1% auto;
+    }
+    img {
+      display: flex;
+      border-radius: 10px;
+
+      @media @mobile {
+        display: flex;
+        width: 100%;
+        padding: 1%;
+      }
+    }
   }
-  .section .box .box-title {
-    font-size: 24px;
-    padding-bottom: 10px;
-    font-weight: bold;
+
+  .features:hover {
+    background-color: @secondary-color;
+    color: wheat;
+    h2 {
+      color: wheat;
+    }
   }
-
-  // .content {
-  //   display: flex;
-  //   flex-direction: row;
-  //   flex-wrap: nowrap;
-  //   justify-content: space-evenly;
-  //   background-color: @btn-secondary-gray;
-  //   margin: 1% 1%;
-  //   width: 100%;
-  //   font-size: 1.6rem;
-
-  //   h2 {
-  //     color: @primary-color;
-  //   }
-
-  //   @media @mobile {
-  //     display: flex;
-  //     flex-direction: column;
-  //     padding: 1%;
-  //     justify-content: center;
-  //     margin: 1% auto;
-  //     width: 100%;
-  //   }
-
-  //   @media @tablet {
-  //     display: flex;
-  //     flex-direction: row;
-  //     flex-wrap: nowrap;
-  //     justify-content: space-evenly;
-  //     margin: 1% auto;
-  //     width: 100%;
-  //   }
-  // }
-
-  // .features {
-  //   display: flex;
-  //   flex-direction: column;
-  //   width: 45%;
-  //   margin: 1% auto;
-
-  //   @media @mobile {
-  //     display: flex;
-  //     flex-direction: column;
-  //     width: 100%;
-  //     padding: 1%;
-  //     margin: 1% auto;
-  //   }
-  //   img {
-  //     display: flex;
-  //     border-radius: 10px;
-
-  //     @media @mobile {
-  //       display: flex;
-  //       width: 100%;
-  //       padding: 1%;
-  //     }
-  //   }
-  // }
 
   .benefits {
     display: flex;
     flex-direction: column;
     width: 45%;
     margin: 1% auto;
+    border: solid 5px @secondary-color;
+    border-radius: 4px;
+    padding: 2%;
+
+    h2 {
+      color: @secondary-color;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      margin: auto;
+    }
 
     @media @mobile {
       display: flex;
@@ -216,5 +208,12 @@
       }
     }
   }
- 
+
+  .benefits:hover {
+    background-color: @secondary-color;
+    color: wheat;
+    h2 {
+      color: wheat;
+    }
+  }
 }
