@@ -180,7 +180,7 @@ img {
 .container {
   max-width: 1000px;
   width: 100%;
-  margin: 0% auto;
+  margin: 2% auto;
 }
 .nav-container {
   display: flex;
@@ -287,6 +287,7 @@ img {
   background-color: #db4c3f;
   font-size: 1.5rem;
   width: 100%;
+  margin: 2% auto;
 }
 .footer .call-out {
   display: flex;
@@ -501,7 +502,8 @@ img {
   flex-direction: column;
   width: 100%;
   max-width: 1000px;
-  margin: 0% auto;
+  margin: 2% auto;
+  padding: 1%;
   background-color: #db4c3f;
 }
 @media (max-width: 500px) {
