@@ -17,11 +17,116 @@
 }
 
 .team-container {
-    color: wheat;
-    background-color: @secondary-color;
+    color: @secondary-color;
     display: flex;
     flex-direction: column;
+    background-color: wheat;
+    margin: 1% auto;
+    padding: 1%;
     width: 95%;
-    margin: 5% auto;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px black;
+
+    .dev-team {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 1% auto;
+        padding: 0%;
+    }
+
+    .team-mem {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: 1% auto;
+        border: solid 5px @secondary-color;
+        border-radius: 4px;
+        padding: 2%;
+        box-shadow: 3px 3px 10px black;
+    h2 {
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        margin: 1% auto;
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1% auto;
+        padding: 0%;
+
+        i {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 1% auto;
+            font-size: -webkit-xxx-large;
+        }
+    }
+    img {
+        display: flex;
+        width: 100%;
+        margin: 1% auto;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 4px;
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 1% auto;
+            justify-content: center;
+            border-radius: 4px;
+          }
+      
+          @media @tablet {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 1% auto;
+            justify-content: center;
+            border-radius: 4px;
+          }
+    }
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        justify-content: center;
+        margin: 1% auto;
+        width: 100%;
+      }
+  
+      @media @tablet {
+        display: flex;
+        flex-direction: column;
+        margin: 1% auto;
+        width: 100%;
+      }
+
+    }
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        justify-content: center;
+        margin: 1% auto;
+        width: 100%;
+      }
+  
+      @media @tablet {
+        display: flex;
+        flex-direction: column;
+        margin: 1% auto;
+        width: 100%;
+      }
+
 }
 
