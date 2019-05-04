@@ -1,5 +1,5 @@
 .myButton {
-  color: #ffffff;
+  color: wheat;
   background-color: #d62822;
   font-size: 3.25rem;
   line-height: 1.5rem;
@@ -11,6 +11,14 @@
 }
 .myButton:hover {
   background-color: #db4c3f;
+}
+.team-container {
+  color: wheat;
+  background-color: #db4c3f;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 5% auto;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -637,7 +645,8 @@ img {
 }
 .page-container .features img {
   display: flex;
-  border-radius: 10px;
+  width: 100%;
+  margin: 5% auto;
 }
 @media (max-width: 500px) {
   .page-container .features img {
@@ -681,7 +690,8 @@ img {
 }
 .page-container .benefits img {
   display: flex;
-  border-radius: 10px;
+  width: 100%;
+  margin: 5% auto;
 }
 @media (max-width: 500px) {
   .page-container .benefits img {
