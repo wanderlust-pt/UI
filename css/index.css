@@ -34,11 +34,11 @@
 .team-container .team-mem {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 80%;
   margin: 1% auto;
   border: solid 5px #db4c3f;
   border-radius: 4px;
-  padding: 2%;
+  padding: 10%;
   box-shadow: 3px 3px 10px black;
 }
 .team-container .team-mem h2 {
