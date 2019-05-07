@@ -725,7 +725,6 @@ img {
 .page-container .myButton a {
   display: flex;
   flex-direction: row;
-  font-size: 2.5rem;
   line-height: 1.5rem;
   padding: 2%;
   font-family: inherit;
