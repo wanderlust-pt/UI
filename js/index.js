@@ -78,3 +78,15 @@ let myPrimeLinks2 = document.querySelector("a:nth-child(2)")
 let myPrimeLinks3 = document.querySelector("a:nth-child(3)")
 let myPrimeLinks4 = document.querySelector("a:nth-child(4)")
 let myPrimeLinks5 = document.querySelector("a:nth-child(5)")
+
+let webUIDev = {
+    name: 'Myke Larson',
+    role: 'User Interface & First Time Team Lead',
+    
+};
+
+let obj = webUIDev;
+
+Object,keys(obj).forEach(function(key) {
+    console.log(key, obj[key]);
+});
