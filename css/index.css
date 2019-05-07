@@ -719,13 +719,12 @@ img {
 .page-container .myButton:hover {
   background-color: wheat;
   color: #db4c3f;
+  border-color: #db4c3f;
 }
-.page-container .myButton a,
-.page-container p {
+.page-container .myButton a {
   display: flex;
   flex-direction: row;
-  font-size: inherit;
-  text-overflow: inherit;
+  font-size: 2.5rem;
   line-height: 1.5rem;
   padding: 2%;
   font-family: inherit;
@@ -733,23 +732,15 @@ img {
   width: 100%;
   justify-content: center;
   text-decoration: none;
-  color: wheat;
+  color: inherit;
 }
 @media (max-width: 500px) {
-  .page-container .myButton a,
-  .page-container p {
+  .page-container .myButton a {
     display: flex;
     justify-self: center;
     margin: auto;
     padding: 1%;
   }
-}
-.page-container .myButton a a,
-.page-container p a,
-.page-container .myButton a p:hover,
-.page-container p p:hover {
-  background-color: wheat;
-  color: #db4c3f;
 }
 .page-container .content {
   display: flex;
@@ -787,6 +778,42 @@ img {
     margin: 1% auto;
     width: 100%;
   }
+}
+.page-container .content p {
+  color: #db4c3f;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .page-container .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1%;
+    margin: 1% auto;
+  }
+}
+@media (max-width: 768px) {
+  .page-container .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1% auto;
+    width: 100%;
+  }
+}
+.page-container .content:hover {
+  background-color: #db4c3f;
+  color: wheat;
+}
+.page-container .content:hover h2 {
+  color: wheat;
+}
+.page-container .content:hover p {
+  color: wheat;
 }
 .page-container .features {
   display: flex;
@@ -827,11 +854,13 @@ img {
   }
 }
 .page-container .features:hover {
-  background-color: #db4c3f;
-  color: wheat;
+  background-color: wheat;
 }
 .page-container .features:hover h2 {
-  color: wheat;
+  color: #db4c3f;
+}
+.page-container .features:hover p {
+  color: #db4c3f;
 }
 .page-container .benefits {
   display: flex;
@@ -872,13 +901,15 @@ img {
   }
 }
 .page-container .benefits:hover {
-  background-color: #db4c3f;
-  color: wheat;
+  background-color: wheat;
 }
 .page-container .benefits:hover h2 {
-  color: wheat;
+  color: #db4c3f;
 }
-.call-out {
+.page-container .benefits:hover p {
+  color: #db4c3f;
+}
+.page-container .call-out {
   display: flex;
   flex-direction: column;
   background-color: wheat;
@@ -890,7 +921,7 @@ img {
   border-radius: 4px;
   box-shadow: 3px 3px 10px black;
 }
-.call-out h2 {
+.page-container .call-out h2 {
   color: #d62822;
   display: flex;
   flex-direction: column;
@@ -899,22 +930,22 @@ img {
   text-align: center;
 }
 @media (max-width: 500px) {
-  .call-out {
+  .page-container .call-out {
     display: flex;
     flex-direction: column;
   }
 }
 @media (max-width: 768px) {
-  .call-out {
+  .page-container .call-out {
     display: flex;
     flex-direction: column;
   }
 }
-.call-out:hover {
+.page-container .call-out:hover {
   background-color: #db4c3f;
   color: wheat;
 }
-.call-out:hover h2 {
+.page-container .call-out:hover h2 {
   color: wheat;
 }
 @font-face {

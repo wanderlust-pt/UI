@@ -87,6 +87,6 @@ let webUIDev = {
 
 let obj = webUIDev;
 
-Object,keys(obj).forEach(function(key) {
+Object.keys(obj).forEach(function(key) {
     console.log(key, obj[key]);
 });
