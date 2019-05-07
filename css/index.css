@@ -371,6 +371,42 @@ img {
     padding: 1%;
     width: 100%;
     border-radius: 4px;
+    font-size: 1.6rem;
+  }
+}
+.nav-container nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-container nav a {
+  color: wheat;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  font-size: 2.5rem;
+  margin: 2% auto;
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
+  .nav-container nav a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin: 2% auto;
+    padding-top: 2%;
+    font-size: 2.5rem;
+    align-items: baseline;
+  }
+}
+@media (max-width: 768px) {
+  .nav-container nav a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin: 2% auto;
+    padding-top: 2%;
+    font-size: 2.5rem;
+    align-items: baseline;
   }
 }
 .nav-container .brand {

@@ -1,7 +1,6 @@
+let teamMem1 = document.querySelector(".team-mem:nth-child(1)");
 
-let teamMem = document.querySelector(".team-mem");
-
-teamMem.addEventListener('mouseenter', function(event) {
+teamMem1.addEventListener('mouseenter', function(event) {
     event.target.style.color = 'wheat';
     event.target.style.backgroundColor = '#db4c3f';
     event.target.style.borderColor = '#db4c3f';
