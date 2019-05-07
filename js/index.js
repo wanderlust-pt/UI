@@ -72,3 +72,9 @@ teamMem5.addEventListener('mouseenter', function(event) {
 
     }, 5000);
 })
+
+let myPrimeLinks1 = document.querySelector("a:nth-child(1)")
+let myPrimeLinks2 = document.querySelector("a:nth-child(2)")
+let myPrimeLinks3 = document.querySelector("a:nth-child(3)")
+let myPrimeLinks4 = document.querySelector("a:nth-child(4)")
+let myPrimeLinks5 = document.querySelector("a:nth-child(5)")
