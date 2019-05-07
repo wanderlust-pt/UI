@@ -720,7 +720,8 @@ img {
   background-color: wheat;
   color: #db4c3f;
 }
-.page-container .myButton p {
+.page-container .myButton a,
+.page-container p {
   display: flex;
   flex-direction: row;
   font-size: inherit;
@@ -731,14 +732,24 @@ img {
   margin: 1% auto;
   width: 100%;
   justify-content: center;
+  text-decoration: none;
+  color: wheat;
 }
 @media (max-width: 500px) {
-  .page-container .myButton p {
+  .page-container .myButton a,
+  .page-container p {
     display: flex;
     justify-self: center;
     margin: auto;
     padding: 1%;
   }
+}
+.page-container .myButton a a,
+.page-container p a,
+.page-container .myButton a p:hover,
+.page-container p p:hover {
+  background-color: wheat;
+  color: #db4c3f;
 }
 .page-container .content {
   display: flex;
